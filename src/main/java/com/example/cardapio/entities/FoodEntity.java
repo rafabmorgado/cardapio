@@ -27,4 +27,18 @@ public class FoodEntity {
         this.image = data.image();
         this.price = data.price();
     }
+
+    public void updateFood(FoodRequestDTO data){
+        if (data.title() != null) {
+            this.title = data.title();
+        }
+
+        if (data.image() != null) {
+            this.image = data.image();
+        }
+
+        if (data.price() != null) {
+            this.price = data.price();
+        }
+    }
 }
